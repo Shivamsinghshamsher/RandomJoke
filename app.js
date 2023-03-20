@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
     // res.render("index");
     // res.render('index', { foo: 'FOO' });
     res.render('index', { myjoke: joke, creator:created_by });
-    console.log("upper get "+ joke);
+    // console.log("upper get "+ joke);
 });
 var joke;
 var created_by;
@@ -25,15 +25,15 @@ var created_by;
     https.get(url, function (responce) {
 
         // console.log(responce); 
-        console.log("status" + responce.statusCode);
-        console.log(url);
+        // console.log("status" + responce.statusCode);
+        // console.log(url);
         responce.on("data", function (data) {
             // console.log(data);
             let JokeData = JSON.parse(data);
             // console.log(JokeData.jokeContent);
             joke = JokeData.jokeContent;
             //  console.log(JokeData);
-            console.log(JokeData.created_by);
+            // console.log(JokeData.created_by);
             created_by = JokeData.created_by;
             console.log(joke);
             // responce.rander(joke: Myjoke);

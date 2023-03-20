@@ -2,12 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(169, 252, 169);
 }
 
 .container{
-    background-color: rgb(68, 241, 68);
+    height: 80vh;
+    margin: 3rem;
+}
+h1{
+    text-align: center;
 }
 
-h3{
+h3 span{
     color: red;
+    font-size:x-large ;
+}
+h3{
+    margin: 1.5rem 1rem;
+    color: rgb(64, 0, 255);
+}
+p{
+    text-align: right;
+    padding-bottom: .5rem;
+    color: rgb(62, 61, 61);
+
+}
+#creator{
+   
+
+}
+footer{
+    text-align: center;
+    background-color: rgb(116, 249, 109);
+    padding: 2rem 1rem;
+    color: rgb(2, 32, 2);
+}
+
+@media only screen and (max-width:400px) {
+    h3{
+        margin-top: 1rem;
+        text-align: justify;
+    }
+    .container{
+        margin: 2.6rem 2rem;
+    }
 }
