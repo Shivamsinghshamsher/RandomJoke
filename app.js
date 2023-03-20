@@ -47,6 +47,6 @@ console.log("Shivam ");
 // res.render('index', { myjoke: joke, creator: created_by });
 // }) 
 
-app.listen(3000, function () {
+app.listen(RandomJoke, function () {
     console.log("App is running on port 3000");
 }); 
